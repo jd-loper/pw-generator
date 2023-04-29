@@ -27,6 +27,7 @@ def copy_password():
 root = Tk()  # Creates GUI window
 root.title("Password Generator")  # Window title
 root.geometry("250x200")  # Window dimensions
+root.eval("tk::PlaceWindow . center")  # Centers window
 
 btn = Button(root, text="Generate Password", command=generate_password)
 btn.place(relx=0.5, rely=0.2, anchor=N)  # Places button
@@ -34,7 +35,7 @@ btn.place(relx=0.5, rely=0.2, anchor=N)  # Places button
 btn_copy = Button(root, text="Copy Password", command=copy_password)
 btn_copy.place(relx=0.5, rely=0.4, anchor=N)
 
-myFont = Font(family="Courier New", size=14)  # Creates font
+myFont = Font(family="Helvetica", size=14, weight="bold")  # Creates font
 lbl = Label(root, font=myFont)  # Creates label
 lbl.place(relx=0.5, rely=0.6, anchor=CENTER)  # Places label
 
