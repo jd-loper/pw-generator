@@ -25,6 +25,7 @@ def copy_password():
 
 
 root = Tk()  # Creates GUI window
+root.title("Password Generator")  # Window title
 root.geometry("250x200")  # Window dimensions
 
 btn = Button(root, text="Generate Password", command=generate_password)
