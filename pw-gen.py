@@ -11,9 +11,9 @@ def generate_password():  # Selects 4 random characters
         alpha = random.choice(string.ascii_letters)  # Selects random letter
         symbol = random.choice(string.punctuation)  # Selects random symbol
         numbers = random.choice(string.digits)  # Selects random number
-        password.append(alpha)  # Adds random character to list
-        password.append(symbol)  # Adds random character to list
-        password.append(numbers)  # Adds random character to list
+        password.append(alpha)
+        password.append(symbol)
+        password.append(numbers)
     y = "".join(str(x) for x in password)  # Converts list to string
     lbl.config(text=y)  # Displays password
     pyperclip.copy(y)  # Copies password to clipboard
